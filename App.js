@@ -11,10 +11,12 @@ export default class App extends React.Component {
     };
   }
 
-  onPress = () => {
-    setTimeout(() => {
-      this.setState({ showForm: true });
-    }, 300);
+  onPress = (type) => {
+    if (type === 'good') {
+      setTimeout(() => {
+        this.setState({ showForm: true });
+      }, 300);
+    }
   }
 
   render() {

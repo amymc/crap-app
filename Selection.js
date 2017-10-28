@@ -24,7 +24,7 @@ export default class Selection extends React.Component {
       }, 200);
     }
 
-    this.props.onPress();
+    this.props.onPress(type);
   }
 
   render() {
